@@ -4,7 +4,7 @@ import numpy as np
 from skimage import io
 
 img = cv2.imread('assets/imori.jpg')
-#img = img[..., ::-1]
+
 blue = img[:, :, 0].copy()
 red = img[:, :, 2].copy()
 

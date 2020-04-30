@@ -8,11 +8,6 @@ def binarization(num):
         return 255
     return 0
 
-def binarization2(img, th=128):
-	img[img < th] = 0
-	img[img >= th] = 255
-	return img
-
 img = cv2.imread('assets/imori.jpg')
 img = img[..., ::-1]
 
