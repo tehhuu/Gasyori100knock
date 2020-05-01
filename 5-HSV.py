@@ -4,8 +4,6 @@ import numpy as np
 from skimage import io
 import math
 
-img = cv2.imread('assets/imori.jpg')
-
 def RGBtoHSV(img):
     img = img.astype(np.float32)
     img = img.copy() / 255
