@@ -28,6 +28,7 @@ def RGBtoHSV(img):
 
     return HSV
 
+
 def HSVtoRGB(HSV):
     C = HSV[..., 1].copy()
     H_ = HSV[..., 0].copy() / 60
@@ -44,9 +45,11 @@ def HSVtoRGB(HSV):
         new[..., cx_pos[i][1]][ind] += X[ind]
 
     new *= 255
+    new = np.clip(new, 0, 255)
     new = new.astype(np.uint8)
     new = new[..., ::-1]
     return new
+
 
 img = cv2.imread('assets/imori.jpg')
 

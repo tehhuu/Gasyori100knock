@@ -14,7 +14,7 @@ def MaxPooling(img, size):
         for j in range(ratio):
             for c in range(3):
                 new[i*size:(i+1)*size, j*size:(j+1)*size, c] = np.max(img[i*size:(i+1)*size, j*size:(j+1)*size, c])
-
+    
     new = new.astype(np.uint8)
     return new
             
