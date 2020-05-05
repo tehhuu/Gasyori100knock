@@ -37,30 +37,3 @@ new = GaussianFilter(img, matrix)
 cv2.imshow('', new)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-
-'''
-matrix_2 = np.zeros_like(matrix, dtype=np.float)
-
-def Gause(x, y):
-    #return 1 / (2*np.pi*(1.3**2)) * np.exp(((-1)*(x**2+y**2))/(2*(1.3**2)))
-    return np.exp(((-1)*(x**2+y**2))/(2*(1.3**2)))
-
-for i in range(-1, 2):
-    for j in range(-1, 2):
-        matrix_2[i+1, j+1] = Gause(i, j)
-matrix_2 /= (2 * np.pi * 1.3 * 1.3)
-matrix_2 /= matrix_2.sum()
-print(matrix_2)
-
-K_size = 3
-sigma = 1.3
-pad = 1
-K = np.zeros((K_size, K_size), dtype=np.float)
-for x in range(-pad, -pad + K_size):
-    for y in range(-pad, -pad + K_size):
-        K[y + pad, x + pad] = np.exp( -(x ** 2 + y ** 2) / (2 * (sigma ** 2)))
-K /= (2 * np.pi * sigma * sigma)
-K /= K.sum()
-print(K)
-'''

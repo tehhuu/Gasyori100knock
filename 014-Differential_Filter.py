@@ -35,7 +35,7 @@ def v_Differential_Filter(img):
 def synthesize_grayscale(img1, img2):
     _img1 = img1.copy().astype(np.float)
     _img2 = img2.copy().astype(np.float)
-    new = _img1 + _img2
+    new = np.sqrt(_img1**2 + _img2**2)
     new = np.clip(new, 0, 255)
     new = new.astype(np.uint8)
     return new
