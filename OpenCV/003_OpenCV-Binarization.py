@@ -12,11 +12,10 @@ img = cv2.imread('assets/imori.jpg')
 img = img[..., ::-1]
 
 # グレースケール化
-new = 0.2126 * img[:, :, 0] + 0.7152 * img[:, :, 1] + 0.0722 * img[:, :, 2]
+gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 # 2値化
-new2 = np.vectorize(binarization)(new)
-new2 = new2.astype(np.uint8)
+_, new = cv2.threshold(gray, 128, 255, cv2.THRESH_BINARY)
 
-cv2.imshow('', new2)
+cv2.imshow('', new)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
