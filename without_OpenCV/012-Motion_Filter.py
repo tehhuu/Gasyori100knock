@@ -21,7 +21,7 @@ def SmoothingFilter(img, size):
     return new[pad:pad+H, pad:pad+W, :]
 
 
-img = cv2.imread('assets/imori.jpg')
+img = cv2.imread('../assets/imori.jpg')
 
 new = SmoothingFilter(img, 3)
 

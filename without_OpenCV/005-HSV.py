@@ -51,7 +51,7 @@ def HSVtoRGB(HSV):
     return new
 
 
-img = cv2.imread('assets/imori.jpg')
+img = cv2.imread('../assets/imori.jpg')
 
 hsv = RGBtoHSV(img) #HSV変換
 hsv[..., 0] = (hsv[..., 0] + 180) % 360 #色相Hを反転

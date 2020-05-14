@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from skimage import io
 
-img = cv2.imread('assets/imori.jpg')
+img = cv2.imread('../assets/imori.jpg')
 
 blue = img[:, :, 0].copy()
 red = img[:, :, 2].copy()

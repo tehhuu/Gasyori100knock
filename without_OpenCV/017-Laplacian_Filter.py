@@ -25,7 +25,7 @@ def Laplacian_filter(gray):
     return new[pad:H+pad, pad:W+pad]
 
 
-img = cv2.imread('assets/imori.jpg')
+img = cv2.imread('../assets/imori.jpg')
 
 gray = Grayscale(img)
 new = Laplacian_filter(gray)

@@ -18,7 +18,7 @@ def Grayscale_transformation(img):
     return new
 
 
-img = cv2.imread('assets/imori_256x256_dark.png')
+img = cv2.imread('../assets/imori_256x256_dark.png')
 
 # 濃度階調変換
 new = Grayscale_transformation(img)

@@ -14,7 +14,7 @@ def ColorReduction(img):
     return new
             
 
-img = cv2.imread('assets/imori.jpg')
+img = cv2.imread('../assets/imori.jpg')
 
 new = ColorReduction(img)
 

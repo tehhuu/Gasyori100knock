@@ -35,7 +35,7 @@ def Otsubinarization(img):
     return new
 
 
-img = cv2.imread('assets/imori.jpg')
+img = cv2.imread('../assets/imori.jpg')
 img = img[..., ::-1]
 
 new = Grayscale(img) #グレースケール化

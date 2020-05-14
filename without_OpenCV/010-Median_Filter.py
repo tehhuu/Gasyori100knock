@@ -22,7 +22,7 @@ def MedianFilter(img, size):
     return new[pad:pad+H, pad:pad+W, :]
 
 
-img = cv2.imread('assets/imori_noise.jpg')
+img = cv2.imread('../assets/imori_noise.jpg')
 
 new = MedianFilter(img, 3)
 

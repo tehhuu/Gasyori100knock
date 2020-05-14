@@ -23,7 +23,7 @@ def MAX_MIN(img, size):
     return new[pad:pad+H, pad:pad+W]
 
 
-img = cv2.imread('assets/imori.jpg')
+img = cv2.imread('../assets/imori.jpg')
 
 gray = Grayscale(img)
 new = MAX_MIN(gray, 3)

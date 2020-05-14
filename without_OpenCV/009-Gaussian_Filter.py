@@ -29,7 +29,7 @@ def GaussianFilter(img, matrix):
     return new
 
 
-img = cv2.imread('assets/imori_noise.jpg')
+img = cv2.imread('../assets/imori_noise.jpg')
 matrix = np.multiply([[1., 2., 1.], [2., 4., 2.], [1., 2., 1.]], float(1/16))
 
 new = GaussianFilter(img, matrix)

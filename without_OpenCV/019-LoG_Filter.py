@@ -32,7 +32,7 @@ def LoG_filter(gray, sigma, size):
     return new[pad:H+pad, pad:W+pad]
 
 
-img = cv2.imread('assets/imori_noise.jpg')
+img = cv2.imread('../assets/imori_noise.jpg')
 
 gray = Grayscale(img)
 new = LoG_filter(gray, 3., 5)

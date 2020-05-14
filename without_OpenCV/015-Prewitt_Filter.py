@@ -51,7 +51,7 @@ def synthesize_grayscale(img1, img2):
     return new
 
 
-img = cv2.imread('assets/imori.jpg')
+img = cv2.imread('../assets/imori.jpg')
 
 gray = Grayscale(img)
 new_h = h_Prewitt_filter(gray)

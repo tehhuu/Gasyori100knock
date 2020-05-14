@@ -12,7 +12,7 @@ def Change_std_mean(img, mean_new, std_new):
 
     return new
 
-img = cv2.imread('assets/imori_256x256_dark.png')
+img = cv2.imread('../assets/imori_256x256_dark.png')
 
 #平均と標準偏差を変更
 new = Change_std_mean(img, 128, 52)

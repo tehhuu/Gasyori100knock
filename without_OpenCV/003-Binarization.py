@@ -8,7 +8,7 @@ def binarization(num):
         return 255
     return 0
 
-img = cv2.imread('assets/imori.jpg')
+img = cv2.imread('../assets/imori.jpg')
 img = img[..., ::-1]
 
 # グレースケール化
